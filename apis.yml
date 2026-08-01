@@ -1,8 +1,30 @@
 aid: qwak
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/qwak.png
 name: Qwak
-description: 'Qwak is a company surfaced as a portfolio company of bessemer-venture-partners and added
-  to the API Evangelist network as a stub for enrichment. Sector: ai-ml. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: >-
+  Qwak is an end-to-end production machine learning platform that lets data
+  science and ML engineering teams build, train, deploy, monitor, and manage
+  models with minimal engineering friction. The platform unifies MLOps, LLMOps,
+  and a Feature Store, covering model registry and management, GPU/CPU training,
+  production deployment as real-time API endpoints, batch inference or streaming,
+  real-time monitoring and anomaly detection, LLM prompt management, and vector
+  storage. Developers interact with the platform through the `qwak` CLI, the
+  Python SDKs (qwak-sdk, qwak-core, qwak-inference), and a public Go SDK. Qwak
+  was acquired by JFrog and rebranded JFrog ML; its documentation now lives on
+  docs.jfrog.com and the successor SDK is `frogml`. Surfaced in the API
+  Evangelist network as a portfolio company of Bessemer Venture Partners.
 url: https://raw.githubusercontent.com/api-evangelist/qwak/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,16 +34,54 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Ai Ml
+- Machine Learning
+- MLOps
+- LLMOps
+- Feature Store
+- Model Deployment
+- Model Monitoring
+- Developer Tools
 apis: []
+x-enrichment:
+  date: '2026-07-20'
+  status: enriched
+  artifacts_added: 4
+  pass: local-v1
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/qwak-domain-security.yml
 - type: Website
   url: https://www.qwak.com/
+- type: DeveloperPortal
+  url: https://docs.qwak.com/docs
+- type: Documentation
+  url: https://docs.qwak.com/docs
+- type: GitHubOrganization
+  url: https://github.com/qwak-ai
+- type: Blog
+  url: https://www.qwak.com/blog
+- type: Pricing
+  url: https://www.qwak.com/pricing
+- type: SignUp
+  url: https://app.qwak.ai
+- type: Login
+  url: https://app.qwak.ai
+- type: PrivacyPolicy
+  url: https://www.qwak.com/privacy-policy
+- type: Packages
+  url: packages/qwak-packages.yml
+- type: SDKs
+  url: packages/qwak-packages.yml
+- type: CLI
+  url: cli/qwak-cli.yml
+- type: Authentication
+  url: authentication/qwak-authentication.yml

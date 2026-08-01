@@ -1,0 +1,25 @@
+generated: '2026-07-20'
+method: searched
+source: https://docs.qwak.com/docs
+description: >-
+  The `qwak` command-line interface, shipped inside the `qwak-sdk` PyPI package
+  (see packages/qwak-packages.yml). Commands verified against the public
+  qwak-ai GitHub Actions (build-action, deploy-action) which wrap the CLI, and
+  the Qwak documentation. Authentication is via a Qwak Service API Key using
+  `qwak configure --api-key` (see authentication/qwak-authentication.yml).
+docs: https://docs.qwak.com/docs
+repo: https://github.com/qwak-ai
+install:
+  pip: pip install qwak-sdk
+commands:
+  auth_config:
+    - {name: configure, description: "Connect the CLI to your Qwak account with a Service API Key: `qwak configure --api-key <KEY>`."}
+  models:
+    - {name: models build, description: Trigger a remote build of an ML model in Qwak Cloud from a project directory (wrapped by the qwak-ai build-action GitHub Action).}
+    - {name: models deploy, description: Deploy a successful model build as a real-time, batch, or streaming endpoint (wrapped by the qwak-ai deploy-action GitHub Action).}
+notes: >-
+  Command surface captured conservatively from verified public sources
+  (qwak-ai/build-action and qwak-ai/deploy-action action.yml, which invoke
+  `qwak configure`, `qwak models build`, and `qwak models deploy`). The Qwak
+  docs (docs.qwak.com) now redirect to the JFrog ML documentation following the
+  JFrog acquisition; the full command reference lives there.

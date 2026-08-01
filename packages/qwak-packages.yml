@@ -1,0 +1,49 @@
+generated: '2026-07-20'
+method: searched
+source: https://pypi.org/project/qwak-sdk/
+description: >-
+  First-party Qwak (now JFrog ML) client libraries and tools, verified against
+  the public package registries (PyPI, GitHub) at fetch time. Qwak was acquired
+  by JFrog and rebranded JFrog ML; the successor package is `frogml` on PyPI.
+  The `qwak-sdk` package also installs the `qwak` CLI (see cli/qwak-cli.yml).
+packages:
+  - language: python
+    registry: pypi
+    name: qwak-sdk
+    url: https://pypi.org/project/qwak-sdk/
+    install: pip install qwak-sdk
+    version: 0.5.103
+    official: true
+    notes: Qwak SDK and CLI for building, deploying and managing Qwak models. Provides the `qwak` CLI.
+  - language: python
+    registry: pypi
+    name: qwak-core
+    url: https://pypi.org/project/qwak-core/
+    install: pip install qwak-core
+    version: 0.7.113
+    official: true
+    notes: Core objects and communication tools for using the Qwak platform.
+  - language: python
+    registry: pypi
+    name: qwak-inference
+    url: https://pypi.org/project/qwak-inference/
+    install: pip install qwak-inference
+    version: 0.2.1
+    official: true
+    notes: Python client for running real-time predictions against deployed Qwak models.
+  - language: python
+    registry: pypi
+    name: frogml
+    url: https://pypi.org/project/frogml/
+    install: pip install frogml
+    version: 2.1.101
+    official: true
+    notes: Successor SDK after the JFrog acquisition — objects and communication tools for the JFrog ML platform.
+  - language: go
+    registry: github
+    name: qwak-ai/go-sdk
+    url: https://github.com/qwak-ai/go-sdk
+    source: https://github.com/qwak-ai/go-sdk
+    install: go get github.com/qwak-ai/go-sdk
+    official: true
+    notes: Public Go SDK (archived post-acquisition).

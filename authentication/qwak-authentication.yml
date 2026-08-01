@@ -1,0 +1,27 @@
+generated: '2026-07-20'
+method: searched
+source: https://docs.qwak.com/docs
+docs: https://docs.qwak.com/docs
+description: >-
+  Qwak (JFrog ML) platform authentication. Access is via a Qwak Service API Key.
+  The `qwak` CLI persists the key locally with `qwak configure --api-key <KEY>`;
+  the same key authenticates the Python/Go SDKs and CI runners (verified in the
+  public qwak-ai build-action and deploy-action, which pass the key as a
+  repository secret to `qwak configure --api-key $QWAK_API_KEY`). No standalone
+  public OpenAPI declares the security schemes, so this profile is captured by
+  search rather than derived from a spec.
+summary:
+  types: [apiKey]
+  api_key_in: [config]
+  oauth2_flows: []
+schemes:
+  - name: QwakServiceApiKey
+    type: apiKey
+    in: config
+    description: >-
+      Service API Key issued from the Qwak/JFrog ML console. Applied via
+      `qwak configure --api-key`, then used by the SDKs and CLI to authenticate
+      build, deploy, and inference calls.
+    sources:
+      - https://github.com/qwak-ai/build-action
+      - https://github.com/qwak-ai/deploy-action
