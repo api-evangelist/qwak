@@ -1,0 +1,72 @@
+# Pricing transcribed from the provider's own page — see provenance. Numbers are quoted, not derived.
+generated: '2026-10-07'
+method: searched
+source: https://jfrog.com/pricing/?tab=mlops
+sources:
+- https://jfrog.com/pricing/?tab=mlops
+- https://www.qwak.com/pricing
+provenance:
+  tool: all/0-working/economics/harvest_pricing.py
+  run: 20261007T104522
+  grounding: every price_text was found verbatim in the fetched page text
+audience: business-product
+pricing_basis: tiered-subscription
+delivery:
+  delivery: managed+licensed
+  method: page
+  read: '2026-10-07'
+  evidence: Pro X Artifactory - The Universal Private Registry for all Binaries and AI Artifacts. Starting
+    at $27,000 / Year
+  managed_tier: Pro
+published: true
+note: JFrog platform pricing page (MLOps tab); MLOps bundles (Unified 200 Devs, Ultimate 500 Devs) listed
+  without prices. SaaS and self-managed tiers both priced; add-ons marked '$' without amounts.
+plan_count: 7
+currency: USD
+plans:
+- name: Pro (SaaS)
+  price_text: $150 / Month
+  price: 150
+  currency: USD
+  period: month
+  included_quota: 25 GB Base Consumption
+  overage: Tier 1 25 to 1,204 $1.25/GB; Tier 2 1,204 to 2,024 $1.00/GB; Tier 3 2,024+ $0.75/GB
+- name: Pro (SaaS) limited time offer
+  price_text: $50 / Month
+  price: 50
+  currency: USD
+  period: month
+  included_quota: 25 GB Base Consumption
+  overage: Save $100/mo
+- name: Enterprise X (SaaS)
+  price_text: 'Starting at: $950 / Month'
+  price: 950
+  currency: USD
+  period: month
+  included_quota: 125 GB Base Consumption
+  overage: Tier 1 125 to 1,124 $1.25/GB; Tier 2 1,124 to 2,124 $1.00/GB; Tier 3 2,124 to 6,124 $0.75/GB;
+    Tier 4 6,124 to 20,124 $0.55/GB; Tier 5 20,124+ $0.33/GB
+- name: Enterprise + (SaaS)
+  price_text: 'Custom Pricing: Let''s Talk'
+  period: none
+  included_quota: Custom consumption
+- name: Pro X (Self-Managed)
+  price_text: Starting at $27,000 / Year
+  price: 27000
+  currency: USD
+  period: year
+  included_quota: 1 Server | 24/7 SLA Support
+- name: Enterprise X (Self-Managed)
+  price_text: 'Starting at: $51,000 / Year'
+  price: 51000
+  currency: USD
+  period: year
+  included_quota: 3 Servers | 24/7 SLA Support
+- name: Enterprise + (Self-Managed)
+  price_text: 'Custom Pricing: Let''s Talk'
+  period: none
+  included_quota: 6 Servers | Multisite Federation and Distribution
+rate_limit_statements:
+- Unlimited Docker Hub Pulls
+- 99.9% Uptime | 24/7 SLA Support
+- 99.99% Uptime Guarantee (Premium Availability)
