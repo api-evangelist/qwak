@@ -70,3 +70,60 @@ rate_limit_statements:
 - Unlimited Docker Hub Pulls
 - 99.9% Uptime | 24/7 SLA Support
 - 99.99% Uptime Guarantee (Premium Availability)
+x-canonical:
+  generated: '2026-10-08'
+  vocabulary: all/0-working/economics/plans-canonical.yml
+  models:
+  - hybrid
+  - subscription
+  units: []
+  plans:
+  - name: Pro (SaaS)
+    access: other
+    model: hybrid
+    model_how: derived
+    units: []
+    periods:
+    - month
+  - name: Pro (SaaS) limited time offer
+    access: other
+    model: hybrid
+    model_how: derived
+    units: []
+    periods:
+    - month
+  - name: Enterprise X (SaaS)
+    access: other
+    model: hybrid
+    model_how: derived
+    units: []
+    periods:
+    - month
+  - name: Enterprise + (SaaS)
+    access: other
+    model: unstated
+    model_how: derived
+    units: []
+    periods:
+    - none
+  - name: Pro X (Self-Managed)
+    access: other
+    model: subscription
+    model_how: derived
+    units: []
+    periods:
+    - year
+  - name: Enterprise X (Self-Managed)
+    access: other
+    model: subscription
+    model_how: derived
+    units: []
+    periods:
+    - year
+  - name: Enterprise + (Self-Managed)
+    access: other
+    model: unstated
+    model_how: derived
+    units: []
+    periods:
+    - none
